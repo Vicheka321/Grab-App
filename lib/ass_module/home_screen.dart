@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grab_app/ass_module/challenges_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'food_screen.dart';
@@ -589,7 +590,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => ChallengesScreen(),
+                    ),
+                  );
+                },
                 child: Column(
                   children: [
                     SizedBox(
@@ -663,7 +670,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    CupertinoPageRoute(
+                      builder: (context) => TransportScreen(),
+                    ),
+                  );
+                },
                 child: Column(
                   children: [
                     SizedBox(
